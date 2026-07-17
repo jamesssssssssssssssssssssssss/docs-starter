@@ -22,7 +22,7 @@
   "navigation": {
     "global": {
       "anchors": [
-        { "anchor": "Book a demo", "href": "https://sales.verifyyou.com/", "icon": "calendar-check" },
+        { "anchor": "Book a chat", "href": "https://sales.verifyyou.com/", "icon": "calendar-check" },
         { "anchor": "Try the demo", "href": "https://app.verifyyou.com/verification/PsvfRgX5SEGeVMB_Prv2Aw", "icon": "camera" }
       ]
     },
@@ -69,7 +69,7 @@
         "items": [
           { "label": "HumanCheck", "href": "https://verifyyou.com/humancheck" },
           { "label": "Market research", "href": "https://verifyyou.com/solutions/market-research" },
-          { "label": "Book a demo", "href": "https://sales.verifyyou.com/" }
+          { "label": "Book a chat", "href": "https://sales.verifyyou.com/" }
         ]
       },
       {

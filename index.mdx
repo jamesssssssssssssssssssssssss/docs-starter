@@ -5,7 +5,7 @@ mode: "custom"
 ---
 
 <div className="vy-hero max-w-7xl mx-auto px-6">
-  <div className="grid lg:grid-cols-2 gap-10 items-center">
+  <div className="grid lg:grid-cols-2 gap-10 items-start">
     <div>
 
       <h1 className="text-gray-900 dark:text-zinc-50">Real, unique respondents. Every study.</h1>
@@ -91,14 +91,14 @@ mode: "custom"
 
 <div className="max-w-7xl mx-auto px-6 mt-20">
 
-  <div className="bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-2xl px-8 py-10">
-    <p className="vy-kicker">Learn more</p>
-    <h2 className="mt-2 text-2xl font-semibold text-gray-900 dark:text-zinc-50">Here's something the market research industry knows</h2>
-    <p className="mt-3 max-w-3xl text-gray-500 dark:text-zinc-400">Nearly everyone in research has felt it, and almost no one says it out loud: a growing share of survey data no longer comes from real, unique people. Here is the whole picture, in plain terms, and what to do about it.</p>
-    <div className="mt-5">
-      <a href="/why-verifyyou" className="vy-btn vy-btn-primary"><Icon icon="book-open" iconType="light" size={15} /> Learn more</a>
-    </div>
-  </div>
+  <a href="/why-verifyyou" className="vy-pointer bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 text-gray-900 dark:text-zinc-50">
+    <span className="vy-pointer-icon"><Icon icon="book-open" iconType="light" size={24} /></span>
+    <span className="vy-pointer-text">
+      <span className="vy-pointer-title">Here's something the market research industry knows</span>
+      <span className="vy-pointer-sub text-gray-500 dark:text-zinc-400">Nearly everyone in research has felt it, and almost no one says it out loud. Here is the whole picture, in plain terms.</span>
+    </span>
+    <span className="vy-pointer-arrow text-gray-400 dark:text-zinc-500"><Icon icon="arrow-right" iconType="light" size={18} /></span>
+  </a>
 
 </div>
 

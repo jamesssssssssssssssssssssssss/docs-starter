@@ -7,6 +7,13 @@
 /* Larger nav logo, closer to the Claude / Linear scale (Mintlify defaults to ~28px) */
 .nav-logo { height: 40px !important; max-height: 40px !important; }
 
+/* Show Mintlify's navigation hamburger on desktop on the custom-layout home, so the pop-out
+   menu (Book a chat, Try the demo, and every Learn article) is reachable at full screen too.
+   Doc pages already show the full sidebar on desktop, so this is scoped to the custom home. */
+@media (min-width: 1024px) {
+  #navbar.is-custom button.lg\:hidden.w-full.text-left { display: flex !important; }
+}
+
 /* Kicker label above a hero or section heading */
 .vy-kicker {
   text-transform: uppercase;
