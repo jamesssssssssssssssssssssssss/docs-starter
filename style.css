@@ -167,6 +167,13 @@
 .vy-credit-title a { color: inherit; text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(127, 127, 127, 0.45); }
 .vy-credit-title a:hover { color: #16A34A; text-decoration-color: #16A34A; }
 
+/* Larger credit under the hero clip (about 75% bigger picture + text) */
+.vy-credit-lg { gap: 1.05rem; margin-top: 1.1rem; }
+.vy-credit-lg img { width: 74px; height: 74px; }
+.vy-credit-lg .vy-credit-name { font-size: 1.55rem; line-height: 1.2; }
+.vy-credit-lg .vy-credit-title { font-size: 1.4rem; line-height: 1.3; }
+.vy-credit-lg .vy-credit-name a { margin-left: 0.5rem; }
+
 /* ---- Respondent experience: phone renders + the pass/fail fork (ported from research.verifyyou.com) ---- */
 
 /* Phone renders: shadow lives in CSS (adapts to theme), never baked into the PNG */
