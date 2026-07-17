@@ -30,8 +30,8 @@ mint dev             # http://localhost:3000
 ## Still to confirm before the show
 
 - The white paper PDF is now wired to the real hosted file (`verifyyou.com/assets/pdfs/mr-white-paper.pdf`). The host serves it `content-disposition: inline`, so it opens in the browser viewer; set it to `attachment` on the host if you want the button to force a save instead.
-- Confirm Wes Michael is comfortable being named on a public page (dinner section and the white paper quote), and the "40-year veteran" figure.
-- The market-research video is Vimeo `1160337449`; if it is domain-restricted in Vimeo privacy settings, allow `verify-you.mintlify.site`.
+- The hero is a local muted-autoplay clip of Wes Michael (`videos/sizzle-hero.mp4`), credited "President and Founder of Rare Patient Voice, now part of Konovo", with two supporting clips on the Why VerifyYou page. The clip notes (`QUIRKS_WES_VIDEO_CLIPS.md`) say to confirm the final cut with Wes before it goes public under his name and face.
+- The market-research explainer on The problem is Vimeo `1160337449`; if it is domain-restricted, allow `verify-you.mintlify.site`.
 
 ## Rules baked in (do not undo by accident)
 
