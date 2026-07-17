@@ -1,55 +1,40 @@
-# Mintlify Starter Kit
+# VerifyYou at The Quirk's Event — microsite
 
-Use the starter kit to get your docs deployed and ready to customize.
+A landing-first Mintlify site for The Quirk's Event, New York (July 29 and 30, 2026). A
+market-research attendee scans a QR on a business card or LinkedIn, lands on the home page, and
+finds the quick version: the problem in third-party numbers, how the check works, the white paper,
+the one-pager, the market-research video, and a way to book time. Copy is in David's voice, every
+fraud stat is attributed to its source, and the design matches the main verifyyou docs.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+Live at **verify-you.mintlify.site**. Pushing to `main` redeploys automatically.
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+## Pages
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+- `index.mdx` — home (custom-mode landing, no sidebar), with the market-research video embedded
+- `the-problem.mdx` — survey fraud in third-party numbers (NORC, Kantar, Greenbook)
+- `how-it-works.mdx` — liveness and uniqueness, and the honest boundary
+- `white-paper.mdx` — "The Human Data Premium"
+- `one-pager.mdx` — the whole thing on one printable page
+- `meet-us-at-quirks.mdx` — book time, ask about the dinner, grab the assets
+- `docs.json` — config, `style.css` — house styling, `logo/`, `favicon.svg`
 
-## AI-assisted writing
-
-Set up your AI coding tool to work with Mintlify:
+## Run locally
 
 ```bash
-npx skills add https://mintlify.com/docs
+npm i -g mint        # requires Node >= 20.17
+mint dev             # http://localhost:3000
 ```
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+## Still to confirm before the show
 
-See the [AI tools guides](/ai-tools) for tool-specific setup.
+- White paper PDF download button points at `https://verifyyou.com/human-data-premium.pdf` — swap for the real hosted PDF or remove the button (the on-page version stands alone).
+- Confirm Wes Michael is comfortable being named on a public page (dinner section), and the "40-year veteran" figure.
+- The market-research video is Vimeo `1160337449`; if it is domain-restricted in Vimeo privacy settings, allow `verify-you.mintlify.site`.
 
-## Development
+## Rules baked in (do not undo by accident)
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
-npm i -g mint
-```
-
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
-mint dev
-```
-
-View your local preview at `http://localhost:3000`.
-
-## Publishing changes
-
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
-
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+- No em-dashes or en-dashes, no corporate jargon (David's voice).
+- Every fraud number is attributed to NORC, Kantar, or Greenbook, framed as a third-party figure, never a VerifyYou measurement.
+- Never call VerifyYou "identity verification" or "KYC" except to say it is not that.
+- No customer-specific proof point on any public page.
+- Booking CTAs point to `https://sales.verifyyou.com/`; the dinner asks stay as email on purpose.

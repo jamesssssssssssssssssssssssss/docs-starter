@@ -1,0 +1,125 @@
+/* VerifyYou at The Quirk's Event, landing polish.
+   Mintlify auto-includes style.css from the repo root, after framework styles.
+   Tailwind arbitrary values (for example w-[350px]) are not supported in MDX,
+   so anything needing a specific size lives here as a class. Matches the
+   existing verifyyou docs so the two read as one family. */
+
+/* Kicker label above a hero or section heading */
+.vy-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #34A853;
+  margin: 0;
+}
+
+/* Hero */
+.vy-hero { padding-top: 3.5rem; padding-bottom: 1.5rem; }
+.vy-hero h1 { font-size: 3.1rem; line-height: 1.05; font-weight: 600; letter-spacing: -0.01em; }
+@media (max-width: 1024px) { .vy-hero h1 { font-size: 2.25rem; } }
+
+/* Event chip, the "we are here" line at the top of the hero */
+.vy-event {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #2C9247;
+  background: rgba(52, 168, 83, 0.12);
+  border: 1px solid rgba(52, 168, 83, 0.28);
+}
+.dark .vy-event { color: #7FD597; }
+
+/* Buttons */
+.vy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.05rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: 1px solid rgba(127, 127, 127, 0.25);
+}
+.vy-btn-primary { background: #34A853; color: #ffffff; border-color: #34A853; }
+.vy-btn-primary:hover { background: #2c9247; }
+.vy-btn-secondary { background: transparent; }
+.vy-btn-secondary:hover { border-color: #34A853; }
+
+/* Stat tiles, the third-party numbers block */
+.vy-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+@media (max-width: 768px) { .vy-stats { grid-template-columns: 1fr; } }
+.vy-stat {
+  border: 1px solid rgba(127, 127, 127, 0.2);
+  border-radius: 0.8rem;
+  padding: 1.1rem 1.2rem;
+}
+.vy-stat .num { font-size: 2rem; font-weight: 600; line-height: 1; color: #34A853; }
+.vy-stat .lbl { margin-top: 0.5rem; font-size: 0.92rem; color: #8a8f98; }
+.vy-stat .src { margin-top: 0.35rem; font-size: 0.75rem; color: #8a8f98; opacity: 0.8; }
+
+/* One-line pitch band */
+.vy-band {
+  border: 1px solid rgba(52, 168, 83, 0.28);
+  background: rgba(52, 168, 83, 0.06);
+  border-radius: 0.9rem;
+  padding: 1.4rem 1.6rem;
+}
+
+/* Signed note (David) */
+.vy-note {
+  border-left: 3px solid #34A853;
+  padding: 0.2rem 0 0.2rem 1.1rem;
+  color: #52525b;
+}
+.dark .vy-note { color: #a1a1aa; }
+
+/* Hero "search" style link, kept for parity with the main docs */
+.vy-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.7rem;
+  border: 1px solid rgba(127, 127, 127, 0.25);
+  color: #8a8f98;
+  text-decoration: none;
+}
+.vy-search:hover { border-color: #34A853; }
+
+/* Responsive video embed (Vimeo / YouTube), keeps a 16:9 box at any width */
+.vy-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  border: 1px solid rgba(127, 127, 127, 0.2);
+  background: #000;
+}
+.vy-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.vy-caption { margin-top: 0.6rem; font-size: 0.85rem; color: #8a8f98; }
+
+/* Print, so the one-pager prints clean on a single sheet */
+@media print {
+  .vy-noprint { display: none !important; }
+  .vy-print-tight h1 { font-size: 1.6rem; }
+  body { font-size: 11px; }
+}
