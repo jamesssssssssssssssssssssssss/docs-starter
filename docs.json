@@ -26,6 +26,7 @@
         "pages": [
           "the-problem",
           "how-it-works",
+          "respondent-experience",
           "white-paper",
           "one-pager",
           "meet-us-at-quirks"
@@ -40,13 +41,13 @@
         "href": "/"
       },
       {
-        "label": "White paper",
-        "href": "/white-paper"
+        "label": "See the demo",
+        "href": "https://app.verifyyou.com/verification/PsvfRgX5SEGeVMB_Prv2Aw"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Book time at the show",
+      "label": "Book a chat with us",
       "href": "https://sales.verifyyou.com/"
     }
   },
@@ -69,6 +70,7 @@
         "items": [
           { "label": "The problem", "href": "/the-problem" },
           { "label": "How it works", "href": "/how-it-works" },
+          { "label": "Respondent experience", "href": "/respondent-experience" },
           { "label": "White paper", "href": "/white-paper" },
           { "label": "Meet us", "href": "/meet-us-at-quirks" }
         ]
