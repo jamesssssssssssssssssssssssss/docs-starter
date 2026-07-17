@@ -171,7 +171,7 @@
 .vy-credit-lg { gap: 1.05rem; margin-top: 1.1rem; }
 .vy-credit-lg img { width: 74px; height: 74px; }
 .vy-credit-lg .vy-credit-name { font-size: 1.55rem; line-height: 1.2; }
-.vy-credit-lg .vy-credit-title { font-size: 1.4rem; line-height: 1.3; }
+.vy-credit-lg .vy-credit-title { font-size: 1.125rem; line-height: 1.4; margin-top: 0.15rem; }
 .vy-credit-lg .vy-credit-name a { margin-left: 0.5rem; }
 
 /* ---- Respondent experience: phone renders + the pass/fail fork (ported from research.verifyyou.com) ---- */
