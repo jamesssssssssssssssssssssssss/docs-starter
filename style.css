@@ -1,8 +1,8 @@
-/* VerifyYou at The Quirk's Event, landing polish.
+/* VerifyYou for market research, landing polish.
    Design system lifted from the main verifyyou docs (verifyyou-74) so the two read as one
    family: same green (#16A34A), same Inter, same card / hero-mark / spectrum vocabulary.
    The docs' 24-second cinematic homepage intro is intentionally NOT included here, since a
-   conference QR-scan page needs to be fast and useful, not a curtain. */
+   QR-scan landing needs to be fast and useful, not a curtain. */
 
 /* Larger nav logo, closer to the Claude / Linear scale (Mintlify defaults to ~28px) */
 .nav-logo { height: 40px !important; max-height: 40px !important; }
@@ -134,7 +134,7 @@
 .dark .vy-sp-on { background: rgba(22, 163, 74, 0.12); }
 .vy-sp-on .vy-sp-label { color: #16A34A; }
 
-/* ---- Quirk's additions (stat tiles, one-line band, signed note, video) ---- */
+/* ---- Landing additions (stat tiles, one-line band, signed note, video) ---- */
 
 /* Stat tiles, the third-party numbers block */
 .vy-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
