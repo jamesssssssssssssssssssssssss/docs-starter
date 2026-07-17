@@ -7,12 +7,35 @@
 /* Larger nav logo, closer to the Claude / Linear scale (Mintlify defaults to ~28px) */
 .nav-logo { height: 40px !important; max-height: 40px !important; }
 
-/* Show Mintlify's navigation hamburger on desktop on the custom-layout home, so the pop-out
-   menu (Book a chat, Try the demo, and every Learn article) is reachable at full screen too.
-   Doc pages already show the full sidebar on desktop, so this is scoped to the custom home. */
-@media (min-width: 1024px) {
-  #navbar.is-custom button.lg\:hidden.w-full.text-left { display: flex !important; }
+/* Self-contained menu button for the custom-layout home. Mintlify shows the full sidebar on
+   desktop article pages and a hamburger only on mobile, so on the custom home (desktop) this
+   floating button gives a pop-out with every link. Hidden below lg, where Mintlify's own
+   hamburger already works. */
+.vy-hamburger { position: fixed; top: 76px; left: 20px; z-index: 50; }
+@media (max-width: 1023px) { .vy-hamburger { display: none; } }
+.vy-hamburger > summary {
+  list-style: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 10px; color: inherit;
+  border: 1px solid rgba(127, 127, 127, 0.25); background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
 }
+.dark .vy-hamburger > summary { background: rgba(20, 20, 22, 0.7); }
+.vy-hamburger > summary::-webkit-details-marker { display: none; }
+.vy-hamburger > summary::marker { content: ""; }
+.vy-hamburger > summary:hover { border-color: rgba(22, 163, 74, 0.5); }
+.vy-hamburger-menu {
+  position: absolute; top: 48px; left: 0; min-width: 224px;
+  display: flex; flex-direction: column; padding: 6px;
+  border-radius: 12px; border: 1px solid rgba(127, 127, 127, 0.2);
+  background: #ffffff; box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+}
+.dark .vy-hamburger-menu { background: #0b0b0d; border-color: rgba(255, 255, 255, 0.12); box-shadow: 0 14px 34px rgba(0, 0, 0, 0.6); }
+.vy-hamburger-menu a {
+  display: flex; align-items: center; gap: 0.55rem; padding: 0.5rem 0.7rem; border-radius: 8px;
+  font-size: 0.9rem; font-weight: 500; color: inherit; text-decoration: none;
+}
+.vy-hamburger-menu a:hover { background: rgba(22, 163, 74, 0.1); color: #16A34A; }
+.vy-hamburger-sep { height: 1px; margin: 5px 6px; background: rgba(127, 127, 127, 0.2); }
 
 /* Kicker label above a hero or section heading */
 .vy-kicker {
