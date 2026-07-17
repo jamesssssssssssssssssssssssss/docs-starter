@@ -13,7 +13,9 @@ Live at **verify-you.mintlify.site**. Pushing to `main` redeploys automatically.
 - `index.mdx` — home (custom-mode landing, no sidebar), with the market-research video embedded
 - `the-problem.mdx` — survey fraud in third-party numbers (NORC, Kantar, Greenbook)
 - `how-it-works.mdx` — liveness and uniqueness, and the honest boundary
-- `white-paper.mdx` — "The Human Data Premium"
+- `white-paper.mdx` — "The Human Data Premium": a readable web version plus a download card
+  (cover preview at `images/wp-cover.jpg`) for the full designed PDF at
+  `https://verifyyou.com/assets/pdfs/mr-white-paper.pdf`
 - `one-pager.mdx` — the whole thing on one printable page
 - `meet-us-at-quirks.mdx` — book time, ask about the dinner, grab the assets
 - `docs.json` — config, `style.css` — house styling, `logo/`, `favicon.svg`
@@ -27,14 +29,14 @@ mint dev             # http://localhost:3000
 
 ## Still to confirm before the show
 
-- White paper PDF download button points at `https://verifyyou.com/human-data-premium.pdf` — swap for the real hosted PDF or remove the button (the on-page version stands alone).
-- Confirm Wes Michael is comfortable being named on a public page (dinner section), and the "40-year veteran" figure.
+- The white paper PDF is now wired to the real hosted file (`verifyyou.com/assets/pdfs/mr-white-paper.pdf`). The host serves it `content-disposition: inline`, so it opens in the browser viewer; set it to `attachment` on the host if you want the button to force a save instead.
+- Confirm Wes Michael is comfortable being named on a public page (dinner section and the white paper quote), and the "40-year veteran" figure.
 - The market-research video is Vimeo `1160337449`; if it is domain-restricted in Vimeo privacy settings, allow `verify-you.mintlify.site`.
 
 ## Rules baked in (do not undo by accident)
 
 - No em-dashes or en-dashes, no corporate jargon (David's voice).
-- Every fraud number is attributed to NORC, Kantar, or Greenbook, framed as a third-party figure, never a VerifyYou measurement.
+- Every fraud number matches the white paper's figures and sources (Insights Association for the ~40%, Dartmouth/PNAS for the 99.8%, Imperva for the 51%, Kantar for discard rates, NORC for the industry range), framed as a third-party figure, never a VerifyYou measurement.
 - Never call VerifyYou "identity verification" or "KYC" except to say it is not that.
 - No customer-specific proof point on any public page.
 - Booking CTAs point to `https://sales.verifyyou.com/`; the dinner asks stay as email on purpose.
