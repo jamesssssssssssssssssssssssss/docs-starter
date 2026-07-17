@@ -3,29 +3,21 @@
   "theme": "mint",
   "name": "VerifyYou",
   "colors": {
-    "primary": "#34A853",
-    "light": "#5BC273",
-    "dark": "#2C9247"
+    "primary": "#16A34A",
+    "light": "#FFFFFF",
+    "dark": "#000000"
+  },
+  "fonts": {
+    "family": "Inter"
+  },
+  "icons": {
+    "library": "fontawesome"
   },
   "favicon": "/favicon.svg",
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
     "href": "/"
-  },
-  "appearance": {
-    "default": "dark"
-  },
-  "fonts": {
-    "heading": {
-      "family": "Lora"
-    },
-    "body": {
-      "family": "Inter"
-    }
-  },
-  "icons": {
-    "library": "fontawesome"
   },
   "navigation": {
     "groups": [
@@ -60,8 +52,27 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/verifyyou",
-      "linkedin": "https://www.linkedin.com/company/verifyyou"
-    }
+      "linkedin": "https://www.linkedin.com/company/verifyyou",
+      "instagram": "https://www.instagram.com/verifyyouapp"
+    },
+    "links": [
+      {
+        "header": "VerifyYou",
+        "items": [
+          { "label": "HumanCheck", "href": "https://verifyyou.com/humancheck" },
+          { "label": "Market research", "href": "https://verifyyou.com/solutions/market-research" },
+          { "label": "Book a demo", "href": "https://sales.verifyyou.com/" }
+        ]
+      },
+      {
+        "header": "At Quirk's",
+        "items": [
+          { "label": "The problem", "href": "/the-problem" },
+          { "label": "How it works", "href": "/how-it-works" },
+          { "label": "White paper", "href": "/white-paper" },
+          { "label": "Meet us", "href": "/meet-us-at-quirks" }
+        ]
+      }
+    ]
   }
 }

@@ -1,8 +1,11 @@
 /* VerifyYou at The Quirk's Event, landing polish.
-   Mintlify auto-includes style.css from the repo root, after framework styles.
-   Tailwind arbitrary values (for example w-[350px]) are not supported in MDX,
-   so anything needing a specific size lives here as a class. Matches the
-   existing verifyyou docs so the two read as one family. */
+   Design system lifted from the main verifyyou docs (verifyyou-74) so the two read as one
+   family: same green (#16A34A), same Inter, same card / hero-mark / spectrum vocabulary.
+   The docs' 24-second cinematic homepage intro is intentionally NOT included here, since a
+   conference QR-scan page needs to be fast and useful, not a curtain. */
+
+/* Larger nav logo, closer to the Claude / Linear scale (Mintlify defaults to ~28px) */
+.nav-logo { height: 40px !important; max-height: 40px !important; }
 
 /* Kicker label above a hero or section heading */
 .vy-kicker {
@@ -10,13 +13,13 @@
   letter-spacing: 0.12em;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #34A853;
+  color: #16A34A;
   margin: 0;
 }
 
 /* Hero */
-.vy-hero { padding-top: 3.5rem; padding-bottom: 1.5rem; }
-.vy-hero h1 { font-size: 3.1rem; line-height: 1.05; font-weight: 600; letter-spacing: -0.01em; }
+.vy-hero { padding-top: 3.5rem; padding-bottom: 0.25rem; }
+.vy-hero h1 { font-size: 3rem; line-height: 1.05; font-weight: 600; letter-spacing: -0.01em; }
 @media (max-width: 1024px) { .vy-hero h1 { font-size: 2.25rem; } }
 
 /* Event chip, the "we are here" line at the top of the hero */
@@ -28,62 +31,30 @@
   border-radius: 999px;
   font-size: 0.82rem;
   font-weight: 600;
-  color: #2C9247;
-  background: rgba(52, 168, 83, 0.12);
-  border: 1px solid rgba(52, 168, 83, 0.28);
+  color: #15803D;
+  background: rgba(22, 163, 74, 0.10);
+  border: 1px solid rgba(22, 163, 74, 0.28);
 }
-.dark .vy-event { color: #7FD597; }
+.dark .vy-event { color: #6EE7A0; }
 
 /* Buttons */
 .vy-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.65rem 1.05rem;
+  padding: 0.6rem 1rem;
   border-radius: 0.6rem;
   font-weight: 600;
   font-size: 0.95rem;
   text-decoration: none;
   border: 1px solid rgba(127, 127, 127, 0.25);
 }
-.vy-btn-primary { background: #34A853; color: #ffffff; border-color: #34A853; }
-.vy-btn-primary:hover { background: #2c9247; }
+.vy-btn-primary { background: #16A34A; color: #ffffff; border-color: #16A34A; }
+.vy-btn-primary:hover { background: #15803D; }
 .vy-btn-secondary { background: transparent; }
-.vy-btn-secondary:hover { border-color: #34A853; }
+.vy-btn-secondary:hover { border-color: #16A34A; }
 
-/* Stat tiles, the third-party numbers block */
-.vy-stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-@media (max-width: 768px) { .vy-stats { grid-template-columns: 1fr; } }
-.vy-stat {
-  border: 1px solid rgba(127, 127, 127, 0.2);
-  border-radius: 0.8rem;
-  padding: 1.1rem 1.2rem;
-}
-.vy-stat .num { font-size: 2rem; font-weight: 600; line-height: 1; color: #34A853; }
-.vy-stat .lbl { margin-top: 0.5rem; font-size: 0.92rem; color: #8a8f98; }
-.vy-stat .src { margin-top: 0.35rem; font-size: 0.75rem; color: #8a8f98; opacity: 0.8; }
-
-/* One-line pitch band */
-.vy-band {
-  border: 1px solid rgba(52, 168, 83, 0.28);
-  background: rgba(52, 168, 83, 0.06);
-  border-radius: 0.9rem;
-  padding: 1.4rem 1.6rem;
-}
-
-/* Signed note (David) */
-.vy-note {
-  border-left: 3px solid #34A853;
-  padding: 0.2rem 0 0.2rem 1.1rem;
-  color: #52525b;
-}
-.dark .vy-note { color: #a1a1aa; }
-
-/* Hero "search" style link, kept for parity with the main docs */
+/* Hero "search" box, kept for parity with the main docs */
 .vy-search {
   display: flex;
   align-items: center;
@@ -96,25 +67,96 @@
   color: #8a8f98;
   text-decoration: none;
 }
-.vy-search:hover { border-color: #34A853; }
+.vy-search:hover { border-color: #16A34A; }
+.vy-search .kbd {
+  font-size: 0.75rem;
+  border: 1px solid rgba(127, 127, 127, 0.3);
+  border-radius: 0.35rem;
+  padding: 0.1rem 0.4rem;
+}
+
+/* Buyer pointer: a single slim full-width card, for the non-developer */
+.vy-pointer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.vy-pointer:hover { transform: translateY(-1px); border-color: rgba(22, 163, 74, 0.45) !important; }
+.vy-pointer-icon { display: inline-flex; color: #16A34A; flex: none; }
+.vy-pointer-text { display: flex; flex-direction: column; flex: 1 1 auto; }
+.vy-pointer-title { font-weight: 600; font-size: 1rem; margin-bottom: 2px; }
+.vy-pointer-sub { font-size: 0.875rem; margin-top: 2px; }
+.vy-pointer-arrow { display: inline-flex; flex: none; }
+
+/* Numbered lifecycle section header */
+.vy-stage { display: flex; align-items: center; gap: 0.6rem; font-weight: 600; font-size: 1.05rem; margin: 2rem 0 0.9rem; }
+.vy-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.5rem; height: 1.5rem; border-radius: 999px;
+  border: 1px solid rgba(127, 127, 127, 0.35);
+  font-size: 0.8rem; font-weight: 600; color: #16A34A; flex: none;
+}
+
+/* Linear-style cards: a real corner icon + a giant faint echo of that same icon. */
+.vy-card {
+  position: relative; overflow: hidden; border-radius: 14px; padding: 24px;
+  min-height: 200px; display: flex; flex-direction: column; justify-content: flex-end;
+  text-decoration: none; transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.vy-card:hover { transform: translateY(-2px); border-color: rgba(22, 163, 74, 0.45) !important; }
+.vy-card-wm { position: absolute; top: -36px; right: -28px; opacity: 0.06; pointer-events: none; }
+.dark .vy-card-wm { opacity: 0.10; }
+.vy-card-icon { position: absolute; top: 18px; left: 18px; display: inline-flex; }
+/* Inline VerifyYou mark (real glyph, currentColor) used as corner icon + giant faint watermark */
+.vy-mark-icon { position: absolute; top: 18px; left: 18px; height: 22px; width: auto; }
+.vy-mark-wm { position: absolute; top: -30px; right: -24px; height: 240px; width: auto; opacity: 0.06; pointer-events: none; }
+.dark .vy-mark-wm { opacity: 0.10; }
+.vy-card-title { font-weight: 600; font-size: 1.05rem; line-height: 1.3; }
+.vy-card-sub { font-size: 0.875rem; line-height: 1.45; margin-top: 6px; }
+.vy-card-meta { font-size: 0.8rem; color: #8a8f98; margin-top: 5px; }
+
+/* Faint VerifyYou mark behind the hero panel (here, behind the video). */
+.vy-hero-mark { position: absolute; top: -60px; right: 20px; height: 460px; width: auto; opacity: var(--mark-rest); pointer-events: none; z-index: 0; overflow: visible; --mark-rest: 0.05; }
+.dark .vy-hero-mark { --mark-rest: 0.09; }
+.vy-hero-code { position: relative; z-index: 1; }
+
+/* Where it fits: nothing -> KYC, VerifyYou highlighted */
+.vy-spectrum { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.6rem; margin: 1.25rem 0 0.5rem; }
+@media (max-width: 720px) { .vy-spectrum { grid-template-columns: 1fr 1fr; } }
+.vy-sp-item { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.8rem 0.9rem; border: 1px solid rgba(127, 127, 127, 0.22); border-radius: 10px; }
+.vy-sp-label { font-weight: 600; font-size: 0.95rem; }
+.vy-sp-sub { font-size: 0.8rem; color: #8a8f98; line-height: 1.35; }
+.vy-sp-on { border-color: #16A34A; background: rgba(22, 163, 74, 0.06); }
+.dark .vy-sp-on { background: rgba(22, 163, 74, 0.12); }
+.vy-sp-on .vy-sp-label { color: #16A34A; }
+
+/* Reuse the REAL Mintlify footer on the custom-layout home. */
+#footer.advanced-footer { display: flex !important; }
+
+/* ---- Quirk's additions (stat tiles, one-line band, signed note, video) ---- */
+
+/* Stat tiles, the third-party numbers block */
+.vy-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 768px) { .vy-stats { grid-template-columns: 1fr; } }
+.vy-stat { border: 1px solid rgba(127, 127, 127, 0.2); border-radius: 0.8rem; padding: 1.1rem 1.2rem; }
+.vy-stat .num { font-size: 2rem; font-weight: 600; line-height: 1; color: #16A34A; }
+.vy-stat .lbl { margin-top: 0.5rem; font-size: 0.92rem; color: #8a8f98; }
+.vy-stat .src { margin-top: 0.35rem; font-size: 0.75rem; color: #8a8f98; opacity: 0.8; }
+
+/* One-line pitch band */
+.vy-band { border: 1px solid rgba(22, 163, 74, 0.28); background: rgba(22, 163, 74, 0.06); border-radius: 0.9rem; padding: 1.4rem 1.6rem; }
+
+/* Signed note (David) */
+.vy-note { border-left: 3px solid #16A34A; padding: 0.2rem 0 0.2rem 1.1rem; color: #52525b; }
+.dark .vy-note { color: #a1a1aa; }
 
 /* Responsive video embed (Vimeo / YouTube), keeps a 16:9 box at any width */
-.vy-video {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 0.9rem;
-  overflow: hidden;
-  border: 1px solid rgba(127, 127, 127, 0.2);
-  background: #000;
-}
-.vy-video iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
+.vy-video { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 0.9rem; overflow: hidden; border: 1px solid rgba(127, 127, 127, 0.2); background: #000; }
+.vy-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .vy-caption { margin-top: 0.6rem; font-size: 0.85rem; color: #8a8f98; }
 
 /* Print, so the one-pager prints clean on a single sheet */
