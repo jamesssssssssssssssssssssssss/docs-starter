@@ -20,9 +20,15 @@
     "href": "/"
   },
   "navigation": {
+    "global": {
+      "anchors": [
+        { "anchor": "Book a demo", "href": "https://sales.verifyyou.com/", "icon": "calendar-check" },
+        { "anchor": "Try the demo", "href": "https://app.verifyyou.com/verification/PsvfRgX5SEGeVMB_Prv2Aw", "icon": "camera" }
+      ]
+    },
     "groups": [
       {
-        "group": "VerifyYou at The Quirk's Event",
+        "group": "Learn",
         "pages": [
           "why-verifyyou",
           "the-problem",
@@ -30,7 +36,7 @@
           "respondent-experience",
           "white-paper",
           "one-pager",
-          "meet-us-at-quirks"
+          "meet-us"
         ]
       }
     ]
@@ -67,14 +73,15 @@
         ]
       },
       {
-        "header": "At Quirk's",
+        "header": "Learn",
         "items": [
           { "label": "Why VerifyYou", "href": "/why-verifyyou" },
           { "label": "The problem", "href": "/the-problem" },
           { "label": "How it works", "href": "/how-it-works" },
           { "label": "Respondent experience", "href": "/respondent-experience" },
           { "label": "White paper", "href": "/white-paper" },
-          { "label": "Meet us", "href": "/meet-us-at-quirks" }
+          { "label": "One-pager", "href": "/one-pager" },
+          { "label": "Talk to us", "href": "/meet-us" }
         ]
       }
     ]

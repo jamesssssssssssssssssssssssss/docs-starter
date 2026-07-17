@@ -1,10 +1,11 @@
-# VerifyYou at The Quirk's Event — microsite
+# VerifyYou for market research — event landing
 
-A landing-first Mintlify site for The Quirk's Event, New York (July 29 and 30, 2026). A
-market-research attendee scans a QR on a business card or LinkedIn, lands on the home page, and
-finds the quick version: the problem in third-party numbers, how the check works, the white paper,
-the one-pager, the market-research video, and a way to book time. Copy is in David's voice, every
-fraud stat is attributed to its source, and the design matches the main verifyyou docs.
+An evergreen, landing-first Mintlify site for any market-research event. A market-research
+attendee scans a QR on a business card or LinkedIn (or finds it in the run-up), lands on the home
+page, and finds the quick version: the problem in third-party numbers, how the check works, the
+white paper, the one-pager, the market-research video, and a way to book a chat. Copy is in
+David's voice, every fraud stat is attributed to its source, and the design matches the main
+verifyyou docs. It carries no event-specific dates or names, so it works at any show.
 
 Live at **verify-you.mintlify.site**. Pushing to `main` redeploys automatically.
 
@@ -17,7 +18,7 @@ Live at **verify-you.mintlify.site**. Pushing to `main` redeploys automatically.
   (cover preview at `images/wp-cover.jpg`) for the full designed PDF at
   `https://verifyyou.com/assets/pdfs/mr-white-paper.pdf`
 - `one-pager.mdx` — the whole thing on one printable page
-- `meet-us-at-quirks.mdx` — book a chat and grab the assets
+- `meet-us.mdx` — book a chat and grab the assets
 - `docs.json` — config, `style.css` — house styling, `logo/`, `favicon.svg`
 
 ## Run locally
