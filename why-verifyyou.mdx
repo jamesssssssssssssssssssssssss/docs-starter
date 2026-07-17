@@ -1,0 +1,92 @@
+---
+title: "Why VerifyYou, for market research"
+description: "The whole case in one read: what VerifyYou is, why survey fraud has crossed from nuisance to structural failure, where a human check fits, and what your panels get back."
+---
+
+If you only read one page, read this one. It walks through what VerifyYou is, why it matters for panels and studies, and where it fits next to the tools you already run. It is written for research and panel teams, so we will use your language and be honest about the edges.
+
+<div className="vy-noprint mt-2 mb-8 flex flex-wrap gap-3">
+  <a href="https://app.verifyyou.com/verification/PsvfRgX5SEGeVMB_Prv2Aw" target="_blank" rel="noopener" className="vy-btn vy-btn-primary"><Icon icon="camera" iconType="light" size={15} /> Try the demo</a>
+  <a href="https://sales.verifyyou.com/" className="vy-btn vy-btn-secondary"><Icon icon="comments" iconType="light" size={15} /> Book a chat with us</a>
+</div>
+
+## The problem, in market research
+
+Trust breaks at scale, and in research the thing being gamed is the incentive. Every completed response can be worth money, so bots, duplicate respondents, professional survey-takers, and survey farms all find their way in, and they have only gotten harder to spot. The old fixes assume you can catch the bad ones after the fact. That assumption is failing, because AI has changed what a fake respondent costs to make. A language model now writes fluent, human-sounding open-ends in bulk, and a farm can spin up convincing synthetic respondents for almost nothing. When the cost to fake a person falls, the volume rises, and the honest share of your data shrinks.
+
+For the scale of it in third-party numbers, see [the problem](/the-problem). The short version is that a large share of online survey data is no longer coming from real, unique people, and cleaning it up after collection is a race you do not get to stop running.
+
+## What VerifyYou is
+
+VerifyYou is a quick face check a respondent does with their phone or webcam. No documents, no government ID, no wallet, just their face, for a few seconds, in the browser. From that one scan it proves two things at once.
+
+<CardGroup cols={2}>
+  <Card title="Liveness" icon="user" iconType="light">
+    A real person is present right now, not a photo, a recording, a screen showing a screen, or an AI generated face. This is what stops a bot or a synthetic respondent at the door.
+  </Card>
+  <Card title="Uniqueness" icon="fingerprint" iconType="light">
+    One human, one response. So one person cannot quietly become fifteen to skew a study, and a screened-out respondent cannot come straight back under a new name.
+  </Card>
+</CardGroup>
+
+A duplicate fails on uniqueness. A bot fails on liveness. A survey farm fails both the moment the same face appears again. What your dashboard sees afterward is a verdict, verified or denied, never a face.
+
+## The trust layer between no checks and full KYC
+
+Most teams reach for one of two other tools and find neither fits. Passive bot signals guess at risk but never prove a person, so a determined human still runs fifteen accounts across your panel. Full KYC proves a legal identity, but it brings the cost, the PII, and the friction you were trying to avoid, and for survey work you almost never need to know who someone legally is. VerifyYou sits in the gap. It proves a real, live, unique human without proving who they are, which is exactly what a panel is actually after: not your respondents' identities, just the guarantee that one real person means one response.
+
+## Why detection alone stopped working
+
+The industry answered the fraud crisis with an expanding toolkit: attention checks, speeding detection, open-end review, device and geo signals, CAPTCHAs, and post-field statistical cleaning. Each catches some fraud. None catches enough. A peer-reviewed Dartmouth study in PNAS found AI agents passing standard survey quality checks at 99.8 percent, and detection runs on a losing asymmetry, because defenders have to catch every kind of fraud while an attacker only has to find one gap. VerifyYou does not play that game. Instead of asking, after collection, how much of this was fake, it asks at the door whether a real, unique, live human is here at all. That question does not have the same ceiling.
+
+## The economics of fraud
+
+Fraud is an economic decision. Someone games a survey when faking a presence costs less than the incentive is worth. AI has pushed that cost toward zero, which is why the volume keeps climbing. VerifyYou changes the math at the point of entry. When every respondent has to be a unique, verified human before they reach the incentive, the cost of creating a fake presence climbs sharply and the economics tilt back toward you. You stop paying to clean bad data after the fact and make it uneconomic to create in the first place.
+
+## Built by people who fought this at scale
+
+VerifyYou comes from people who fought this exact problem at internet scale. Marty Weiner, our CTO, was a founding engineer at Pinterest and Reddit's first CTO, where he spent years building systems to fight spam, bots, and abuse across hundreds of millions of users. He watched communities get overrun by fake accounts and ban evaders who spun up new profiles in minutes. VerifyYou is the layer he wished he had: a way for any platform, a survey panel included, to prove a real, unique human without the weight of a full identity check.
+
+## What it does not claim
+
+A human check is additive to your quality stack, not a replacement for it. It is not KYC and does not confirm anyone's name or legal identity, on purpose. It sits alongside your attention checks and device signals, not in place of them. And it does not add friction for your good respondents: a person who passes carries a credential across your studies, so a genuine returning participant is recognized rather than made to start over. On data, the scan becomes a face vector, a one-way numerical representation of facial geometry, not a saved image, and your business receives a verdict and the reference id you chose to attach, never a face and never a name.
+
+## Questions research teams ask
+
+<AccordionGroup>
+  <Accordion title="Will it hurt my completion rate?">
+    A check turns some traffic away, but look at what it turns away: bots, duplicates, and survey farms that were never going to be quality completes. Real people clear the scan in seconds, a returning respondent is recognized without doing it again, and how strict it runs is tuned to your study. It is a lower cost per quality response, not just friction.
+  </Accordion>
+  <Accordion title="We already run attention checks and a bot filter. Isn't that enough?">
+    Keep them, they are cheap and worth running. But passive signals are easy to fake, and AI is now better at looking human than many people are, which is why teams come to us after the passive approach stops holding up. VerifyYou sits behind your existing checks, for the abuse that now clears them.
+  </Accordion>
+  <Accordion title="What about drop-off and my panel provider?">
+    Place the check right before the incentive, so real people push through. Screen-outs are routed back to your panel's disqualification path, so the exchange sees a clean end state and keeps sending traffic rather than stalling the audience. The success and screen-out redirects are both part of setup.
+  </Accordion>
+  <Accordion title="Is our respondents' data safe?">
+    Your systems receive a verdict, never a face. The selfie becomes a face vector, a numerical representation of the face's geometry, not a photo, and we do not store images. No name, no government ID, and no extra PII unless you explicitly turn identity sharing on.
+  </Accordion>
+  <Accordion title="What does it cost?">
+    Pricing depends on your volume and your use case, so there is no single number to quote here. Tell us what you are protecting and roughly how much traffic you expect, and we will size it with you. [Book a chat](https://sales.verifyyou.com/) for a quote.
+  </Accordion>
+  <Accordion title="Can we see it work before we commit?">
+    Yes. [Try the demo](https://app.verifyyou.com/verification/PsvfRgX5SEGeVMB_Prv2Aw) right now, no signup and no integration, exactly what your respondents would go through. When you are ready, the next step is usually a free pilot with a branded link you push to a batch of your own respondents.
+  </Accordion>
+</AccordionGroup>
+
+## Where to go next
+
+<CardGroup cols={2}>
+  <Card title="The problem, in numbers" icon="triangle-exclamation" iconType="light" href="/the-problem">
+    How much of a panel is really bots, duplicates, and survey farms, in third-party figures.
+  </Card>
+  <Card title="How the check works" icon="shield-check" iconType="light" href="/how-it-works">
+    Liveness and uniqueness in a few seconds, and the honest boundary.
+  </Card>
+  <Card title="The respondent experience" icon="mobile-screen" iconType="light" href="/respondent-experience">
+    The real screens a respondent sees, click to complete, and the demo.
+  </Card>
+  <Card title="The white paper" icon="file-lines" iconType="light" href="/white-paper">
+    The Human Data Premium, the longer argument, with the charts and citations.
+  </Card>
+</CardGroup>

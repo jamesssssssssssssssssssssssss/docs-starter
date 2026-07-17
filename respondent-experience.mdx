@@ -8,25 +8,84 @@ description: "One screen at a time: the click, the scan, the pass, and the gate 
   <h2 className="mt-2 text-xl font-semibold text-gray-900 dark:text-zinc-50">See the real check, right now</h2>
   <p className="mt-2 text-gray-500 dark:text-zinc-400">This is exactly what your respondents go through. No signup, no integration, just the experience, and it takes a few seconds.</p>
   <div className="mt-4 flex flex-wrap gap-3">
-    <a href="https://app.verifyyou.com/verification/PsvfRgX5SEGeVMB_Prv2Aw" target="_blank" rel="noopener" className="vy-btn vy-btn-primary"><Icon icon="camera" iconType="light" size={15} /> Launch the demo</a>
+    <a href="https://app.verifyyou.com/verification/PsvfRgX5SEGeVMB_Prv2Aw" target="_blank" rel="noopener" className="vy-btn vy-btn-primary"><Icon icon="camera" iconType="light" size={15} /> Try the demo</a>
     <a href="https://sales.verifyyou.com/" className="vy-btn vy-btn-secondary"><Icon icon="comments" iconType="light" size={15} /> Book a chat with us</a>
   </div>
 </div>
 
-For all the talk of models and fraud, what actually matters to a respondent is four screens. Here is the whole thing they see: the click, the scan, the pass, and the gate opening into your study.
+Four steps, one screen at a time. Every screen below is the real product unless it is marked otherwise.
 
 <Steps>
-  <Step title="They click your study link" icon="arrow-pointer" iconType="light">
-    The check opens from wherever you recruit, a panel invite or an Alchemer or Qualtrics link, before the respondent reaches the study. The screen is plain: "Prove you're real. A quick face check before you continue."
+  <Step title="They click your study link">
+    From your panel invite, or a link in your survey platform, Alchemer here, wherever you recruit. The link opens the check first, not your study.
+
+    <Frame caption="Real product. 'Prove you're real. A quick face check before you continue.' One tap.">
+      <img className="vy-phone" src="/images/screen-arrive.png" alt="The handoff screen" style={{ maxWidth: '300px' }} />
+    </Frame>
   </Step>
-  <Step title="They do the scan" icon="camera" iconType="light">
-    A few seconds in the camera with live prompts, a small "hold still" as it reads a real, present face. No photo is shared with you or with your survey platform, only a yes or no.
+  <Step title="They do the scan">
+    A few seconds in the camera with live prompts. No photo is shared with you or with your survey platform, only a yes or no.
+
+    <Frame caption="Real product. Live prompts guide them: 'Hold still.'">
+      <img className="vy-phone" src="/images/screen-scan2.png" alt="The face scan" style={{ maxWidth: '300px' }} />
+    </Frame>
   </Step>
-  <Step title="Pass or fail, instantly" icon="circle-check" iconType="light">
-    A real, unique person goes straight into your study. Anyone who cannot clear the check is screened out before the survey, so there is nothing to pay for and nothing to clean up later.
+  <Step title="The fork: pass or fail">
+    The scan ends one of two ways, and both are instant.
+
+    <div className="vy-fork">
+      <span className="vy-fork-top">The scan ends</span>
+      <svg className="vy-fork-lines" viewBox="0 0 400 78" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M200 2 v16 C200 52 100 40 100 70" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M200 2 v16 C200 52 300 40 300 70" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M95 65 L100 74 L105 65" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M295 65 L300 74 L305 65" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+      <div className="vy-fork-row">
+        <span className="vy-fork-pill vy-fork-pass"><span className="vy-fork-ic"><Icon icon="circle-check" iconType="light" size={15} /></span>Pass</span>
+        <span className="vy-fork-pill vy-fork-fail"><span className="vy-fork-ic"><Icon icon="circle-xmark" iconType="light" size={15} /></span>Fail</span>
+      </div>
+      <div className="vy-fork-row vy-fork-t2">
+        <div className="vy-fork-lane">
+          <svg className="vy-fork-drop" viewBox="0 0 20 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 2 v28" stroke="currentColor" strokeWidth="1.5" /><path d="M5 25 L10 34 L15 25" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+          <span className="vy-fork-pill vy-fork-pass">Straight into your study</span>
+        </div>
+        <div className="vy-fork-lane">
+          <svg className="vy-fork-drop" viewBox="0 0 20 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 2 v22" stroke="currentColor" strokeWidth="1.5" /><path d="M4 30 L16 38 M16 30 L4 38" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>
+          <span className="vy-fork-pill vy-fork-fail">Screened out. Nothing to pay.</span>
+        </div>
+      </div>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-5 mt-6">
+      <div className="border border-gray-200 dark:border-zinc-800 rounded-xl p-6 bg-gray-50 dark:bg-zinc-900">
+        <p className="font-semibold text-gray-900 dark:text-zinc-50"><Icon icon="circle-check" iconType="light" size={16} /> They pass</p>
+        <img className="vy-phone mt-4" src="/images/screen-pass-2.png" alt="The success screen" style={{ maxWidth: 'min(260px, 100%)', margin: '1rem auto 0', display: 'block' }} />
+        <p className="mt-4 text-sm text-gray-500 dark:text-zinc-400">Live and unique. They go straight on to your survey with a one-time password already filled in, then your questions. <i>(Real product, demo partner brand.)</i></p>
+        <img className="vy-phone mt-6" src="/images/screen-gate.png" alt="Survey login page pre-filled" style={{ maxWidth: 'min(260px, 100%)', margin: '1.5rem auto 0', display: 'block' }} />
+        <p className="mt-4 text-sm text-gray-500 dark:text-zinc-400">The pass lane continues here: your survey's login page, password already in the box. With auto-submit on, they skip this page entirely. <i>(Illustration; the real page inherits your study's theme.)</i></p>
+      </div>
+      <div className="border border-gray-200 dark:border-zinc-800 rounded-xl p-6 bg-gray-50 dark:bg-zinc-900">
+        <p className="font-semibold text-gray-900 dark:text-zinc-50"><Icon icon="circle-xmark" iconType="light" size={16} /> They fail</p>
+        <img className="vy-phone mt-4" src="/images/screen-denied.png" alt="Denied screen" style={{ maxWidth: 'min(260px, 100%)', margin: '1rem auto 0', display: 'block' }} />
+        <p className="mt-4 text-sm text-gray-500 dark:text-zinc-400">A duplicate face, a replay, or a bot. No password, no study, no complete, nothing to pay. They are routed to your panel's screen-out, and a new device or browser changes nothing, because the check recognizes the face. <i>(Real product.)</i></p>
+        <div className="vy-dead"><span className="vy-dead-x"><Icon icon="xmark" iconType="light" size={36} /></span></div>
+        <p className="mt-4 text-sm text-gray-500 dark:text-zinc-400">The fail lane ends here, by design. There is no page after this one.</p>
+      </div>
+    </div>
+
   </Step>
-  <Step title="When they come back" icon="rotate" iconType="light">
-    Return to the same study and they are recognized as someone who already answered, so one person means one response, permanently. Come to a different study and they are recognized with far less friction, cleared for the new one in moments.
+  <Step title="When they come back">
+    <div className="grid md:grid-cols-2 gap-5 mt-2">
+      <div className="border border-gray-200 dark:border-zinc-800 rounded-xl p-6 bg-gray-50 dark:bg-zinc-900">
+        <p className="font-semibold text-gray-900 dark:text-zinc-50">Same study: a dead end</p>
+        <p className="mt-2 text-sm text-gray-500 dark:text-zinc-400">Their face already earned its one password, and it is spent. One person, one response, permanently.</p>
+      </div>
+      <div className="border border-gray-200 dark:border-zinc-800 rounded-xl p-6 bg-gray-50 dark:bg-zinc-900">
+        <p className="font-semibold text-gray-900 dark:text-zinc-50">Your next study: welcome back</p>
+        <p className="mt-2 text-sm text-gray-500 dark:text-zinc-400">Recognized, less friction, and a fresh one-time password for the new study. You are never charged twice for the same human.</p>
+      </div>
+    </div>
   </Step>
 </Steps>
 
@@ -34,9 +93,17 @@ For all the talk of models and fraud, what actually matters to a respondent is f
 
 The whole point is that a genuine respondent hardly notices it. Real people clear the scan in seconds and are recognized on the way back, while the accounts you were about to pay for nothing quietly fall away at the door. It is a filter on who collects, not a hurdle for the people you want in your data.
 
-For how the check reads a live, unique human under the hood, see [how the check works](/how-it-works). When you are ready, the fastest way to feel it is the demo above, and then a quick chat.
-
-<div className="vy-noprint mt-8 flex flex-wrap gap-3">
-  <a href="https://app.verifyyou.com/verification/PsvfRgX5SEGeVMB_Prv2Aw" target="_blank" rel="noopener" className="vy-btn vy-btn-primary"><Icon icon="camera" iconType="light" size={15} /> See the demo</a>
-  <a href="https://sales.verifyyou.com/" className="vy-btn vy-btn-secondary"><Icon icon="comments" iconType="light" size={15} /> Book a chat with us</a>
+<div className="grid md:grid-cols-2 gap-5 mt-6">
+  <a href="/how-it-works" className="vy-card bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 text-gray-900 dark:text-zinc-50">
+    <span className="vy-card-wm"><Icon icon="shield-check" iconType="light" size={250} /></span>
+    <span className="vy-card-icon"><Icon icon="shield-check" iconType="light" size={22} /></span>
+    <span className="vy-card-title">How the check works</span>
+    <span className="vy-card-sub text-gray-500 dark:text-zinc-400">Liveness and uniqueness under the hood, and the honest boundary.</span>
+  </a>
+  <a href="https://sales.verifyyou.com/" className="vy-card bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 text-gray-900 dark:text-zinc-50">
+    <span className="vy-card-wm"><Icon icon="comments" iconType="light" size={250} /></span>
+    <span className="vy-card-icon"><Icon icon="comments" iconType="light" size={22} /></span>
+    <span className="vy-card-title">Book a chat with us</span>
+    <span className="vy-card-sub text-gray-500 dark:text-zinc-400">Fifteen minutes on your panels, and a free pilot link if it fits.</span>
+  </a>
 </div>

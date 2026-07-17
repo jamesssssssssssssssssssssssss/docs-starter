@@ -24,6 +24,7 @@
       {
         "group": "VerifyYou at The Quirk's Event",
         "pages": [
+          "why-verifyyou",
           "the-problem",
           "how-it-works",
           "respondent-experience",
@@ -41,7 +42,7 @@
         "href": "/"
       },
       {
-        "label": "See the demo",
+        "label": "Try the demo",
         "href": "https://app.verifyyou.com/verification/PsvfRgX5SEGeVMB_Prv2Aw"
       }
     ],
@@ -68,6 +69,7 @@
       {
         "header": "At Quirk's",
         "items": [
+          { "label": "Why VerifyYou", "href": "/why-verifyyou" },
           { "label": "The problem", "href": "/the-problem" },
           { "label": "How it works", "href": "/how-it-works" },
           { "label": "Respondent experience", "href": "/respondent-experience" },
