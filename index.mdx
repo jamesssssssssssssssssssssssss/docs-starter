@@ -4,9 +4,9 @@ description: "Real, unique respondents, every study. VerifyYou ensures that ever
 mode: "custom"
 ---
 
-<details className="vy-hamburger">
-  <summary aria-label="Menu"><Icon icon="bars" iconType="light" size={20} /></summary>
-  <div className="vy-hamburger-menu text-gray-900 dark:text-zinc-100">
+<div className="vy-hamburger">
+  <button className="vy-hamburger-btn" aria-label="Menu" onClick={() => { const m = document.getElementById('vy-hmenu'); if (m) m.classList.toggle('vy-open'); }}><Icon icon="bars" iconType="light" size={20} /></button>
+  <div id="vy-hmenu" className="vy-hamburger-menu text-gray-900 dark:text-zinc-100">
     <a href="https://sales.verifyyou.com/"><Icon icon="comments" iconType="light" size={15} /> Book a chat</a>
     <a href="https://app.verifyyou.com/verification/PsvfRgX5SEGeVMB_Prv2Aw" target="_blank" rel="noopener"><Icon icon="camera" iconType="light" size={15} /> Try the demo</a>
     <div className="vy-hamburger-sep"></div>
@@ -18,7 +18,7 @@ mode: "custom"
     <a href="/one-pager">One-pager</a>
     <a href="/meet-us">Talk to us</a>
   </div>
-</details>
+</div>
 
 <div className="vy-hero max-w-7xl mx-auto px-6">
   <div className="grid lg:grid-cols-2 gap-10 items-start">

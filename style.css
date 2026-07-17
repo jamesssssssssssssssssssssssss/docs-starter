@@ -13,22 +13,21 @@
    hamburger already works. */
 .vy-hamburger { position: fixed; top: 76px; left: 20px; z-index: 50; }
 @media (max-width: 1023px) { .vy-hamburger { display: none; } }
-.vy-hamburger > summary {
-  list-style: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
+.vy-hamburger-btn {
+  cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
   width: 40px; height: 40px; border-radius: 10px; color: inherit;
   border: 1px solid rgba(127, 127, 127, 0.25); background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
 }
-.dark .vy-hamburger > summary { background: rgba(20, 20, 22, 0.7); }
-.vy-hamburger > summary::-webkit-details-marker { display: none; }
-.vy-hamburger > summary::marker { content: ""; }
-.vy-hamburger > summary:hover { border-color: rgba(22, 163, 74, 0.5); }
+.dark .vy-hamburger-btn { background: rgba(20, 20, 22, 0.7); }
+.vy-hamburger-btn:hover { border-color: rgba(22, 163, 74, 0.5); }
 .vy-hamburger-menu {
   position: absolute; top: 48px; left: 0; min-width: 224px;
-  display: flex; flex-direction: column; padding: 6px;
+  display: none; flex-direction: column; padding: 6px;
   border-radius: 12px; border: 1px solid rgba(127, 127, 127, 0.2);
   background: #ffffff; box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
 }
+.vy-hamburger-menu.vy-open { display: flex; }
 .dark .vy-hamburger-menu { background: #0b0b0d; border-color: rgba(255, 255, 255, 0.12); box-shadow: 0 14px 34px rgba(0, 0, 0, 0.6); }
 .vy-hamburger-menu a {
   display: flex; align-items: center; gap: 0.55rem; padding: 0.5rem 0.7rem; border-radius: 8px;
