@@ -17,7 +17,7 @@ Live at **verify-you.mintlify.site**. Pushing to `main` redeploys automatically.
   (cover preview at `images/wp-cover.jpg`) for the full designed PDF at
   `https://verifyyou.com/assets/pdfs/mr-white-paper.pdf`
 - `one-pager.mdx` — the whole thing on one printable page
-- `meet-us-at-quirks.mdx` — book time, ask about the dinner, grab the assets
+- `meet-us-at-quirks.mdx` — book a chat and grab the assets
 - `docs.json` — config, `style.css` — house styling, `logo/`, `favicon.svg`
 
 ## Run locally
@@ -39,4 +39,4 @@ mint dev             # http://localhost:3000
 - Every fraud number matches the white paper's figures and sources (Insights Association for the ~40%, Dartmouth/PNAS for the 99.8%, Imperva for the 51%, Kantar for discard rates, NORC for the industry range), framed as a third-party figure, never a VerifyYou measurement.
 - Never call VerifyYou "identity verification" or "KYC" except to say it is not that.
 - No customer-specific proof point on any public page.
-- Booking CTAs point to `https://sales.verifyyou.com/`; the dinner asks stay as email on purpose.
+- Booking CTAs point to `https://sales.verifyyou.com/`.
