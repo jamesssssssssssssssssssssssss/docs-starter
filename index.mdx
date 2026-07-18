@@ -57,61 +57,69 @@ mode: "custom"
 </div>
 
 <div className="max-w-7xl mx-auto px-6 mt-20">
+  <p className="vy-kicker">Start here</p>
+  <h2 className="mt-2 text-2xl font-semibold text-gray-900 dark:text-zinc-50">Three ways in</h2>
+  <p className="mt-2 text-gray-500 dark:text-zinc-400">Pick where you want to start: the short case, the respondent screens, or the full paper.</p>
 
-  <p className="vy-kicker">What it is</p>
+  <div className="grid md:grid-cols-3 gap-5 mt-6">
+    <a href="/why-verifyyou" className="vy-card bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 text-gray-900 dark:text-zinc-50">
+      <span className="vy-card-wm"><Icon icon="circle-question" iconType="light" size={250} /></span>
+      <span className="vy-card-icon"><Icon icon="circle-question" iconType="light" size={22} /></span>
+      <span className="vy-card-title">Why VerifyYou</span>
+      <span className="vy-card-sub text-gray-500 dark:text-zinc-400">The whole case in one read: what it is, why it matters for panels, and where it fits.</span>
+    </a>
 
-  <h2 className="mt-2 text-2xl font-semibold text-gray-900 dark:text-zinc-50">A quick face check that proves two things</h2>
+    <a href="/respondent-experience" className="vy-card bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 text-gray-900 dark:text-zinc-50">
+      <span className="vy-card-wm"><Icon icon="mobile-screen" iconType="light" size={250} /></span>
+      <span className="vy-card-icon"><Icon icon="mobile-screen" iconType="light" size={22} /></span>
+      <span className="vy-card-title">What respondents see</span>
+      <span className="vy-card-sub text-gray-500 dark:text-zinc-400">The real screens a respondent goes through, from click to complete, and the demo.</span>
+    </a>
 
-  <p className="mt-2 max-w-3xl text-gray-500 dark:text-zinc-400">VerifyYou is a quick face check a respondent does with their phone or webcam. No documents, no government ID, just their face, for a few seconds, in the browser. From that one scan it proves two things at once.</p>
-
-  <div className="grid md:grid-cols-2 gap-5 mt-6">
-    <div className="rounded-2xl p-6 bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800">
-      <span className="inline-flex text-gray-900 dark:text-zinc-50"><Icon icon="user" iconType="light" size={24} /></span>
-      <div className="mt-3 font-semibold text-gray-900 dark:text-zinc-50">Liveness</div>
-      <p className="mt-2 text-sm text-gray-500 dark:text-zinc-400">A real person is present right now, not a photo, a recording, a screen showing a screen, or an AI generated face. This is what stops a bot or a synthetic respondent at the door.</p>
-    </div>
-    <div className="rounded-2xl p-6 bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800">
-      <span className="inline-flex text-gray-900 dark:text-zinc-50"><Icon icon="fingerprint" iconType="light" size={24} /></span>
-      <div className="mt-3 font-semibold text-gray-900 dark:text-zinc-50">Uniqueness</div>
-      <p className="mt-2 text-sm text-gray-500 dark:text-zinc-400">One human, one response. So one person cannot quietly become fifteen to skew a study, and a screened-out respondent cannot come straight back under a new name.</p>
-    </div>
+    <a href="/white-paper" className="vy-card bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 text-gray-900 dark:text-zinc-50">
+      <span className="vy-card-wm"><Icon icon="file-lines" iconType="light" size={250} /></span>
+      <span className="vy-card-icon"><Icon icon="file-lines" iconType="light" size={22} /></span>
+      <span className="vy-card-title">The white paper</span>
+      <span className="vy-card-sub text-gray-500 dark:text-zinc-400">The Human Data Premium: the deep dive, with the charts and the citations.</span>
+    </a>
   </div>
-
-  <p className="mt-6 max-w-3xl text-gray-600 dark:text-zinc-300">A duplicate fails on uniqueness. A bot fails on liveness. A survey farm fails both the moment the same face appears again. What your dashboard sees afterward is a verdict, verified or denied, never a face.</p>
-
 </div>
 
 <div className="max-w-7xl mx-auto px-6 mt-20">
+  <p className="vy-kicker">What it is, and why it matters</p>
+  <h2 className="mt-2 text-2xl font-semibold text-gray-900 dark:text-zinc-50">A quick face check, from proof to payoff</h2>
+  <p className="mt-2 max-w-2xl text-gray-500 dark:text-zinc-400">A respondent does a few seconds of face check on their phone or webcam. No documents, no ID. Here is what that gets you.</p>
 
-  <p className="vy-kicker">Why it matters</p>
-
-  <h2 className="mt-2 text-2xl font-semibold text-gray-900 dark:text-zinc-50">What unique and human gets you</h2>
-
-  <p className="mt-2 max-w-3xl text-gray-500 dark:text-zinc-400">VerifyYou ensures that every respondent is unique and human. That one guarantee quietly closes most of the ways a study gets gamed, at the door rather than after the data is already collected.</p>
-
-  <div className="grid md:grid-cols-2 gap-5 mt-6">
+  <div className="grid md:grid-cols-3 gap-5 mt-6 items-stretch">
     <div className="rounded-2xl p-6 bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800">
-      <span className="inline-flex text-gray-900 dark:text-zinc-50"><Icon icon="fingerprint" iconType="light" size={24} /></span>
-      <div className="mt-3 font-semibold text-gray-900 dark:text-zinc-50">One real person, one response</div>
-      <p className="mt-2 text-sm text-gray-500 dark:text-zinc-400">No duplicate respondents claiming the incentive twice, no survey farm running fifteen accounts, and no one returning after a screen-out under a new name. Uniqueness is scoped to per survey, per study, or per panel, whichever fits.</p>
+      <div className="flex items-center gap-2">
+        <Icon icon="face-viewfinder" iconType="light" size={22} />
+        <span className="text-xs font-medium uppercase tracking-wide text-gray-500 dark:text-zinc-400">It proves</span>
+      </div>
+      <h3 className="mt-3 text-base font-semibold text-gray-900 dark:text-zinc-50">A real, unique human</h3>
+      <p className="mt-2 text-sm text-gray-500 dark:text-zinc-400">A person here right now, not a photo, a recording, a screen of a screen, or an AI generated face, and one human counted once per survey, study, or panel.</p>
     </div>
+
     <div className="rounded-2xl p-6 bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800">
-      <span className="inline-flex text-gray-900 dark:text-zinc-50"><Icon icon="user" iconType="light" size={24} /></span>
-      <div className="mt-3 font-semibold text-gray-900 dark:text-zinc-50">A live human, never a bot or an AI</div>
-      <p className="mt-2 text-sm text-gray-500 dark:text-zinc-400">No automated scripts and no AI-generated respondents clearing your screeners, because the check confirms a real, present person, not a photo, a recording, or a synthetic face.</p>
+      <div className="flex items-center gap-2">
+        <Icon icon="shield-check" iconType="light" size={22} />
+        <span className="text-xs font-medium uppercase tracking-wide text-gray-500 dark:text-zinc-400">So it blocks</span>
+      </div>
+      <h3 className="mt-3 text-base font-semibold text-gray-900 dark:text-zinc-50">The fraud, at the door</h3>
+      <p className="mt-2 text-sm text-gray-500 dark:text-zinc-400">A bot fails liveness. A duplicate fails uniqueness. A survey farm fails both. They are stopped before the incentive is paid, not found after the data is in.</p>
     </div>
+
     <div className="rounded-2xl p-6 bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800">
-      <span className="inline-flex text-gray-900 dark:text-zinc-50"><Icon icon="hand-holding-dollar" iconType="light" size={24} /></span>
-      <div className="mt-3 font-semibold text-gray-900 dark:text-zinc-50">Your incentive reaches real people</div>
-      <p className="mt-2 text-sm text-gray-500 dark:text-zinc-400">Every payout lands with a distinct, genuine respondent, so the fraudulent share that used to be pure waste never enters the funnel in the first place.</p>
-    </div>
-    <div className="rounded-2xl p-6 bg-gray-50 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800">
-      <span className="inline-flex text-gray-900 dark:text-zinc-50"><Icon icon="chart-line" iconType="light" size={24} /></span>
-      <div className="mt-3 font-semibold text-gray-900 dark:text-zinc-50">Data you can stand behind</div>
-      <p className="mt-2 text-sm text-gray-500 dark:text-zinc-400">Decisions built on responses from real, distinct people instead of noise, so strategy is not quietly steered by bots and duplicates.</p>
+      <div className="flex items-center gap-2">
+        <Icon icon="chart-line" iconType="light" size={22} />
+        <span className="text-xs font-medium uppercase tracking-wide text-gray-500 dark:text-zinc-400">So you get</span>
+      </div>
+      <h3 className="mt-3 text-base font-semibold text-gray-900 dark:text-zinc-50">Clean data and a budget that lands</h3>
+      <p className="mt-2 text-sm text-gray-500 dark:text-zinc-400">Fewer bots and duplicates in the set, an incentive that reaches real people, and decisions that rest on real people instead of noise. The dashboard only ever sees a verdict, never the face.</p>
     </div>
   </div>
 
+  <p className="mt-6 max-w-3xl text-sm text-gray-500 dark:text-zinc-400">This is the trust layer between no checks and full KYC: a real, unique, live human without the cost, the stored PII, or the friction of an ID check.</p>
 </div>
 
 <div className="max-w-7xl mx-auto px-6 mt-20 text-center">
