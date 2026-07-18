@@ -184,8 +184,8 @@
 .vy-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .vy-video video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; background: #000; }
 /* Self-hosted 16:9 clips size to the video's own aspect, so a letterbox bar is impossible (no forced 16:9 box to letterbox into, no black backdrop to show through). Poster must be 16:9 to match. */
-.vy-clip { aspect-ratio: auto; background: transparent; }
-.vy-clip video { position: static; inset: auto; width: 100%; height: auto; object-fit: fill; background: transparent; }
+.vy-clip { aspect-ratio: auto; background: transparent; line-height: 0; font-size: 0; }
+.vy-clip video { display: block; position: static; inset: auto; width: 100%; height: auto; object-fit: fill; background: transparent; }
 .vy-caption { margin-top: 0.6rem; font-size: 0.85rem; color: #8a8f98; }
 
 /* Person credit (avatar + name + title), used under the hero clip and by testimonials */
