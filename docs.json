@@ -31,6 +31,7 @@
         "group": "Learn",
         "pages": [
           "why-verifyyou",
+          "what-humancheck-is",
           "the-problem",
           "how-it-works",
           "respondent-experience",
@@ -76,6 +77,7 @@
         "header": "Learn",
         "items": [
           { "label": "Why VerifyYou", "href": "/why-verifyyou" },
+          { "label": "What HumanCheck is", "href": "/what-humancheck-is" },
           { "label": "The problem", "href": "/the-problem" },
           { "label": "How it works", "href": "/how-it-works" },
           { "label": "Respondent experience", "href": "/respondent-experience" },
